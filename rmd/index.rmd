@@ -16,3 +16,13 @@ source(here("scripts/descriptive_map.R"))
 arrest_count
 
 ```
+
+### Notes about this Map:
+
+* The data comes from the c5 Reporting System on September 28, 2020.
+* The data does not have the fields necessary to indicate who is, and who is not, enrolled in probation.
+  * This is one of the problems with the reporting system.
+* Each address was geocoded through Google Maps API
+  * A total of just over 11,500 records
+  * Each record was of a person 18 or younger
+* With the help of CCGIS, would could design our own polygons seperate from CPD and Judicial Districts.
