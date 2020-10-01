@@ -33,9 +33,9 @@ arrest_count <- base_chicago %>%
               fillOpacity = 0.3,
               weight = 2) %>%
   addMarkers(data = cpd_district_counts$center,
-             label = paste(cpd_district_counts$dist_label, 
-                           "District has a total of \n", 
-                           cpd_district_counts$counts, "arrests", " "),
+             label = paste0(cpd_district_counts$dist_label, 
+                           "district has a total of", 
+                           cpd_district_counts$counts, "cases.", sep = " "),
              labelOptions = labelOptions(noHide = TRUE))
 
 
