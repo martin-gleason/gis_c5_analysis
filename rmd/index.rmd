@@ -1,0 +1,18 @@
+---
+title: "Supplementing Catalyst with GIS and R"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(htmltools)
+library(here)
+source(here("scripts/descriptive_map.R"))
+```
+
+```{r map, include = TRUE, echo = FALSE, message = FALSE}
+
+arrest_count
+
+```
